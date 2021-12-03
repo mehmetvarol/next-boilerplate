@@ -17,9 +17,8 @@ const Index = () => {
       }
     >
       <a href="https://github.com/ixartz/Next-js-Boilerplate">
-        <p>{router.basePath}</p>
         <Image
-          src="https://cdn.hangikredi.com/images/slider/desktop-slider-(2)-desktop.jpg"
+          src={`${router.basePath}/assets/images/nextjs-starter-banner.png`}
           alt="Nextjs starter banner"
           width="1200px"
           height="630px"
