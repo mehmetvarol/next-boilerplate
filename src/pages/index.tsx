@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 import { Meta } from '../layout/Meta';
@@ -16,9 +17,12 @@ const Index = () => {
       }
     >
       <a href="https://github.com/ixartz/Next-js-Boilerplate">
-        <img
-          src={`${router.basePath}/assets/images/nextjs-starter-banner.png`}
+        <p>{router.basePath}</p>
+        <Image
+          src="https://cdn.hangikredi.com/images/slider/desktop-slider-(2)-desktop.jpg"
           alt="Nextjs starter banner"
+          width="1200px"
+          height="630px"
         />
       </a>
       <h1 className="font-bold text-2xl">
